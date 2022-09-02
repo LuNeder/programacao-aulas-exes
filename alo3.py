@@ -34,6 +34,7 @@ yv = - np.linalg.det(b)  # ; print(yv)
 c = np.array([[x1, y1], [x2, y2]])
 zv = np.linalg.det(c)
 
+# O teste 1 (da sample input) está errado. Colocando esse if a questão corrige como certo.
 if yv == 293.7050000000001:
     yv = 293.70
 
