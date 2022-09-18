@@ -26,4 +26,15 @@ print(utime)
 #   print("Virgem")
 # elif utime >= 26179200.0 and utime <= 28080000.0:
 #   print("Libra")
-# elif utime >= 
+# elif utime >= 28166400.0 and utime <= 28684800.0:
+#   print("Escorpião")
+# elif utime >= 28771200.0 and utime <= 30240000.0:
+#   print("Serpentário")
+# elif utime >= 30326400.0 or utime <= 1468800.0:
+#   print("Sagitário")
+# elif utime >= 1555200.0 and <= 3888000.0:
+#   print("Capricórnio")
+# elif utime >= 3974400.0 and utime <= 5961600.0:
+#   print("Aquário")
+# elif utime >= 6048000.0 and utime <= 9244800.0:
+#   print("Peixes")
