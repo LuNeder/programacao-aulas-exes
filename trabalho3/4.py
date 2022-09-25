@@ -4,7 +4,7 @@ import zoneinfo
 
 t = float(input())
 
-stime = datetime.datetime(1970, 1, 1, 5, 0, tzinfo=datetime.timezone.utc)
+stime = datetime.datetime(1970, 1, 1, 5, 0)
 
 ustime = stime.timestamp() # em segundos
 
@@ -20,7 +20,7 @@ while uhor < 86100.0: # 23:55
         hor.append(uhor)
 
 for i in hor:
-    hora = str(datetime.datetime.fromtimestamp(i).astimezone(tz=zoneinfo.ZoneInfo("UTC"))).split()
+    hora = str(datetime.datetime.fromtimestamp(i)).split()
     hora = hora[1].split(":")
 
     print(hora[0] + ":" + hora[1])
