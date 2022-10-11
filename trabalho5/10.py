@@ -1,3 +1,5 @@
+# Nao funciona
+
 tab = []
 
 # coluna vai ser linha (transposta)
