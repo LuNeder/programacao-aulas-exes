@@ -15,6 +15,7 @@ print(tab)
 
 def fim(ganhador):
     print("Jodador " + ganhador + "Venceu!")
+    exit(0)
 
 
 def jogada(jog, lug):
@@ -34,82 +35,62 @@ def check(casa, ganhador):
     test = tab[c][l]
     
     # DIREITA
-    try:
-        if test == tab[c+1][l]: 
-            if test == tab[c+2][l]:
-                if test == tab[c+3][l]:
-                    fim(ganhador)
-    except:
-        a = "a"
+    if test == tab[c+1][l]: 
+        if test == tab[c+2][l]:
+            if test == tab[c+3][l]:
+                print("aqui")
+                fim(ganhador)
+                    
 
     # ESQUERDA
-    try:
-        if test == tab[c-1][l]:
-            if test == tab[c-2][l]:
-                if test == tab[c-3][l]:
-                    fim(ganhador)
-    except:
-        a = "a"
+    if test == tab[c-1][l]:
+        if test == tab[c-2][l]:
+            if test == tab[c-3][l]:
+                fim(ganhador)
 
 
     # CIMA
-    try:
-        if test == tab[c][l+1]:
-            if test == tab[c][l+2]:
-                if test == tab[c][l+3]:
-                    fim(ganhador)
-    except:
-        a = "a"
+    if test == tab[c][l+1]:
+        if test == tab[c][l+2]:
+            if test == tab[c][l+3]:
+                fim(ganhador)
    
 
     # BAIXO
-    try:
-        if test == tab[c][l-1]:
-            if test == tab[c][l-2]:
-                if test == tab[c][l-3]:
-                    fim(ganhador)
-    except:
-        a = "a"
+    if test == tab[c][l-1]:
+        if test == tab[c][l-2]:
+            if test == tab[c][l-3]:
+                fim(ganhador)
 
 
     # DIAGONAL cima-direita
-    try:
-        if test == tab[c+1][l+1]:
-            if test == tab[c+2][l+2]:
-                if test == tab[c+3][l+3]:
-                    fim(ganhador)
-    except:
-        a = "a"
+    if test == tab[c+1][l+1]:
+        if test == tab[c+2][l+2]:
+            if test == tab[c+3][l+3]:
+                fim(ganhador)
 
 
     # DIAGONAL baixo-direita
-    try:
-        if test == tab[c+1][l-1]:
-            if test == tab[c+2][l-2]:
-                if test == tab[c+3][l-3]:
-                    fim(ganhador)
-    except:
-        a = "a"
+    if test == tab[c+1][l-1]:
+        if test == tab[c+2][l-2]:
+            if test == tab[c+3][l-3]:
+                fim(ganhador)
 
 
     #DIAGONAL baixo-esquerda
-    try:
-        if test == tab[c-1][l-1]:
-            if test == tab[c-2][l-2]:
-                if test == tab[c-3][l-3]:
-                    fim(ganhador)
-    except:
-        a = "a"
+    if test == tab[c-1][l-1]:
+        if test == tab[c-2][l-2]:
+            if test == tab[c-3][l-3]:
+                fim(ganhador)
 
 
     #DIAGONAL cima-esquerda
-    try:
-        if test == tab[c-1][l+1]:
-            if test == tab[c-2][l+2]:
-                if test == tab[c-3][l+3]:
-                    fim(ganhador)
-    except:
-        a = "a"
+    if test == tab[c-1][l+1]:
+        if test == tab[c-2][l+2]:
+            if test == tab[c-3][l+3]:
+                fim(ganhador)
+
+    
 
 
 
