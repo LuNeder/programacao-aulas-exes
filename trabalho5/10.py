@@ -14,9 +14,10 @@ print(tab)
 
 
 def jogada(jog, lug):
-    for i in tab[lug]:
-        if i != 0:
-            i = jog
+    for i in reversed(range(0, len(tab[lug]))):
+        if tab[lug][i] == 0:
+            tab[lug][i] = jog
+            print(tab)
             return "done"
 
 
