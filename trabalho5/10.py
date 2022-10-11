@@ -17,23 +17,49 @@ def jogada(jog, lug):
     for i in reversed(range(0, len(tab[lug]))):
         if tab[lug][i] == 0:
             tab[lug][i] = jog
+            success = [lug, i]
             print(tab)
-            return "done"
+            return success
 
 
 
 
-def check():
-    print()
+def check(casa, ganhador):
+    c = casa[0]
+    l = casa[1]
+    test = tab[c][l]
+    
+    # DIREITA
+    if test == tab[c+1][l]: 
+        if test == tab[c+2][l]:
+            if test == tab[c+3][l]:
+                fim(ganhador)
+
+    # ESQUERDA
+    if test == tab[c-1][l]:
+        if test == tab[c-2][l]:
+            if test == tab[c-3][l]:
+                fim(ganhador)
+
+
+    # CIMA
+    if test == tab[c][l+1]:
+        if test == tab[c][l+2]:
+            if test == tab[c][l+3]:
+                fim(ganhador)
+    
+
+
+
 
 
 
 while True:
     jog1 = int(input())
-    jogada(1, jog1)
-    check()
+    casa = jogada(1, jog1)
+    check(casa, 1)
 
 
     jog2 = int(input())
-    jogada(2, jog2)
-    check()
+    casa = jogada(2, jog2)
+    check(casa, 2)
