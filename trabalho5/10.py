@@ -13,6 +13,10 @@ print(tab)
 
 
 
+def fim(ganhador):
+    print("Jodador " + ganhador + "Venceu!")
+
+
 def jogada(jog, lug):
     for i in reversed(range(0, len(tab[lug]))):
         if tab[lug][i] == 0:
