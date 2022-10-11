@@ -49,6 +49,40 @@ def check(casa, ganhador):
                 fim(ganhador)
     
 
+    # BAIXO
+    if test == tab[c][l-1]:
+        if test == tab[c][l-2]:
+            if test == tab[c][l-3]:
+                fim(ganhador)
+
+
+    # DIAGONAL cima-direita
+    if test == tab[c+1][l+1]:
+        if test == tab[c+2][l+2]:
+            if test == tab[c+3][l+3]:
+                fim(ganhador)
+
+
+    # DIAGONAL baixo-direita
+    if test == tab[c+1][l-1]:
+        if test == tab[c+2][l-2]:
+            if test == tab[c+3][l-3]:
+                fim(ganhador)
+
+
+    #DIAGONAL baixo-esquerda
+    if test == tab[c-1][l-1]:
+        if test == tab[c-2][l-2]:
+            if test == tab[c-3][l-3]:
+                fim(ganhador)
+
+
+    #DIAGONAL cima-esquerda
+    if test == tab[c-1][l+1]:
+        if test == tab[c-2][l+2]:
+            if test == tab[c-3][l+3]:
+                fim(ganhador)
+
 
 
 
