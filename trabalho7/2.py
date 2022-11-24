@@ -1,5 +1,17 @@
 def dataine(data):
-    pass
+    data = data.replace(" de janeiro", "/1")
+    data = data.replace(" de fevereiro", "/2")
+    data = data.replace(" de março", "/3")
+    data = data.replace(" de abril", "/4")
+    data = data.replace(" de maio", "/5")
+    data = data.replace(" de junho", "/6")
+    data = data.replace(" de julho", "/7")
+    data = data.replace(" de agosto", "/8")
+    data = data.replace(" de setembro", "/9")
+    data = data.replace(" de outubro", "/10")
+    data = data.replace(" de novembro", "/11")
+    data = data.replace(" de dezembro", "/12")
+    return datainb(data)
 
 def datainb(data):
     d = [int(x) for x in data.split("/")]
@@ -27,7 +39,7 @@ def estacao_do_ano(data):
         ltime = datainb(data)
         return esta(ltime)
     elif " " in data:
-        ltime = dtaine(data)
+        ltime = dataine(data)
         return esta(ltime)
     else:
         exit(9)
