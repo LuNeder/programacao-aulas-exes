@@ -11,24 +11,12 @@ def datainb(data):
         i -= 1
     return ltime
 
-def esta(lt):
-    if 265 <= lt <= 355:
-        return "Primavera"
-    elif lt >= 356 or lt <= 80:
-        return "Verão"
-    elif 81 <= lt <= 172:
-        return "Outono"
-    elif 173 <= lt <= 264:
-        return "Inverno"
-
 
 def estacao_do_ano(data):
     if "/" in data:
-        ltime = datainb(data)
-        return esta(ltime)
+        return datainb(data)
     elif " " in data:
-        ltime = dtaine(data)
-        return esta(ltime)
+        return dtaine(data)
     else:
         exit(9)
 
@@ -38,4 +26,4 @@ while True:
     if data=='-1':
         exit(0)
     else:                
-        print(estacao_do_ano(data))
+        print(estacao_do_ano(data)) 
