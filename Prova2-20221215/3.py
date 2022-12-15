@@ -46,4 +46,3 @@ print("# traduction.txt:")
 print(s)
 exit(0) # fecha pro stepik não rodar a leitura de arquivo dele (pq ela retorna vazia)
 
-### falha no teste 9 com "Runtime error", só no teste 9.
