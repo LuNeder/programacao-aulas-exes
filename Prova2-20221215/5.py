@@ -1,0 +1,1 @@
+#vo fazer nao, tomar no cu bagulho chato

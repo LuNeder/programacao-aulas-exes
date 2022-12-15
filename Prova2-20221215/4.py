@@ -20,7 +20,7 @@ def caixa_eletronico(val):
         notas[5] = 0
     notas[2] = f // 2
     f =  (f % 2)
-    print(f)
+    #print(f)
     
     ordem = [100, 50, 20, 10, 5, 2]
     notasf = {}
