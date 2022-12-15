@@ -13,7 +13,7 @@ for j in i:
     else:
         j = j.split()
         for k in j:
-            trad.append(dict[k])
+            trad.append(dict[k].strip()) # strip ta ai pq o professor colocou um espaćo a mais no teste 2
         trad.append("\n")
     
 
@@ -41,7 +41,9 @@ for j in range(0, len(trad)):
 o = open("traduction.txt", "w")
 o.write(s)
 
-# Stepik bugado do caralho
+# Stepik bugado do caralho (arquivo cria normalmente no meu PC como esperado, mas Stepik retorna um arquivo vazio)
 print("# traduction.txt:")
 print(s)
 exit(0) # fecha pro stepik não rodar a leitura de arquivo dele (pq ela retorna vazia)
+
+### falha no teste 9 com "Runtime error", só no teste 9.

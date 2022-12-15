@@ -1,15 +1,6 @@
-12 2
-friend => amigo
-here => aqui
-Brazil => Brasil
-it's => está
-Hello => Olá
-hot => quente
-that => que
-I => eu
-remembered => lembrei
-today => hoje
-of => do
-so => tão
-Hello friend
-it's so hot here today that I remembered of Brazil
+4 1
+long => longa
+and => e 
+prosper => próspera
+Live => Vida
+Live long and prosper
