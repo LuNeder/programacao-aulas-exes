@@ -41,8 +41,9 @@ for j in range(0, len(trad)):
 o = open("traduction.txt", "w")
 o.write(s)
 
-# Stepik bugado do caralho (arquivo cria normalmente no meu PC como esperado, mas Stepik retorna um arquivo vazio)
-print("# traduction.txt:")
-print(s)
-exit(0) # fecha pro stepik não rodar a leitura de arquivo dele (pq ela retorna vazia)
+## Stepik bugado do caralho (arquivo cria normalmente no meu PC como esperado, mas Stepik retorna um arquivo vazio)
+#print("# traduction.txt:")
+#print(s)
+#exit(0) # fecha pro stepik não rodar a leitura de arquivo dele (pq ela retorna vazia)
 
+o.close() # no stepik tem que fechar pqp (boas praticas me mandaram um abraço né, nunca fecho)
