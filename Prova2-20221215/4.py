@@ -13,19 +13,21 @@ def caixa_eletronico(val):
     f =  (f % 20)
     notas[10] = f // 10
     f =  (f % 10)
+    if (f % 5) % 2 == 0:
+        notas[5] = f // 5
+        f =  (f % 5)
+    else:
+        notas[5] = 0
     notas[2] = f // 2
     f =  (f % 2)
-    notas[5] = f // 5
-    f =  (f % 5)
-    notasc = copy.copy(notas)
-    notasf = {}
-  
+    print(f)
+    
     ordem = [100, 50, 20, 10, 5, 2]
-
+    notasf = {}
     for k in ordem:
-        if notasc[k] != 0:
-            notasf[k] = notasc[k]
- 
+        if notas[k] != 0:
+            notasf[k] = notas[k]
+
 
     return notasf
 
